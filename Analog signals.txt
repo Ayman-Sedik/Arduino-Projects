@@ -1,0 +1,10 @@
+ #define analog1 A0 //بعرف الانالوج بن اللي انا هستخدمه
+ int an=0;
+ void setup() {
+ Serial.begin(9600);
+}
+
+void loop() {
+  an=analogRead(analog1); //دي الفانكشن اللي من خلالها بقرأ القيمه اللي جايه علي الانالوج
+ Serial.println(an);
+ }

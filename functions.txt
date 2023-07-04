@@ -1,0 +1,58 @@
+
+//فانكشن مش بترجع حاجه ومش بتاخد باراميترز
+void setup() {
+Serial.begin(9600);
+calc();
+Serial.println("welcom");
+}
+
+void loop() {
+ 
+}
+void calc()
+{
+  int ayman=1000;
+  int mohammed=2000;
+  int avg=(1000+2000)/3;
+  Serial.println(avg);
+  }
+//فانكشن بتاخد باراميترز
+int a=200;
+int b=500;
+void setup() {
+Serial.begin(9600);
+calc(a,b);
+Serial.println("welcom");
+}
+
+void loop() {
+ 
+}
+void calc(int A,int B)
+{
+   if(A>B)
+   {
+    Serial.println(A);
+    }else Serial.println(B);
+  }
+//فانكشن بترجع وبتاخد باراميترز
+int a=200;
+int b=500;
+int max1=0;
+void setup() {
+Serial.begin(9600);
+max1=calc(a,b);//max1=500
+Serial.println(max1);
+Serial.println("welcom");
+}
+
+void loop() {
+ 
+} 
+int calc(int A,int B)//calc=B=500;مثلا لو B الكبيره 
+{
+   if(A>B)
+   {
+    return A;
+     }else return B;
+  }

@@ -1,0 +1,48 @@
+//pull down resistor
+#define sw 2
+#define gnd 4
+void setup() {
+ Serial.begin(9600);
+ pinMode(sw,INPUT); 
+ pinMode(gnd,OUTPUT);
+ digitalWrite(gnd,LOW);//لو عايزين نعطي قيمه لديجيتال بن تفضل موجوده طول منا في الكود  بكتبها في الفويد سيتأب بدل ماخد سلكه لحد الجراوند
+}
+
+void loop() {
+Serial.println(digitalRead(sw));
+}
+//pull up resistor ومثال علي حل ال باونسينج
+#define sw 2
+#define led LED_BUILTIN
+void setup() {
+ Serial.begin(9600);
+ pinMode(sw,INPUT); 
+ pinMode(led,OUTPUT);
+ }
+
+void loop() {
+  if(digitalRead(sw)==LOW)//لو سبتها ومكتبتش يساوي يساوي هيبقي معنها لو بقت ب هاي 
+  {
+    delay(10);
+    digitalWrite(led,HIGH);
+    }else digitalWrite(led,LOW);
+  }
+// تفعيلPULLUP CIRCUIT داخلي 
+#define sw 2
+#define gnd 4
+#define led LED_BUILTIN
+void setup() {
+ Serial.begin(9600);
+ pinMode(sw,INPUT_PULLUP); //التفعيل
+ pinMode(led,OUTPUT);
+ pinMode(gnd,OUTPUT);
+ digitalWrite(gnd,LOW);
+ }
+
+void loop() {
+  if(digitalRead(sw)==LOW)//لو سبتها ومكتبتش يساوي يساوي هيبقي معنها لو بقت ب هاي 
+  {
+    delay(10);
+    digitalWrite(led,HIGH);
+    }else digitalWrite(led,LOW);
+  }
