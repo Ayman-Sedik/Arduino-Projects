@@ -54,11 +54,11 @@ void setup() {
   lcd.begin(16, 2);
   pinMode(pb,INPUT_PULLUP);
   pinMode(gnd,OUTPUT);
-  digitalWrite(gnd,LOW);//علشان اخرج جراوند علي البن تمانيه
-  lcd.print("push botton");//كتبتها هنا بحيث تفضل مكتوبه بشكل ثابت
-  //lcd.setCursor(0,1);//بحيث بعد م يطبع الكلام يست الكارزر للسطر التاني ده معناه ان اي حاجه هتتكتب بعد كده هتتكتب في السطر التاني معادل الا لو انا عملت ست للكارزر مره تانيه 
-  delay(500);//هيكتب بوشبوتن وهيقعد مده الديلاي دي وبعدين نص ثانيه وعلطول هتتمسح ويبدا يكتب في السطر التاني
-  lcd,clear();//هتمسح اكلام المكتوب ف السيتأب ولما اكتب حاجه بعدها مافيش مشكله 
+  digitalWrite(gnd,LOW); 
+  lcd.print("push botton"); 
+  //lcd.setCursor(0,1); 
+  delay(500); 
+  lcd,clear(); 
   // Print a message to the LCD.
   
  }
@@ -140,9 +140,9 @@ void setup() {
   pinMode(in,OUTPUT);
   digitalWrite(vcc,HIGH);
   digitalWrite(gnd1,LOW);
-   digitalWrite(gnd,LOW);//علشان اخرج جراوند علي البن تمانيه
-  lcd.print("push botton");//كتبتها هنا بحيث تفضل مكتوبه بشكل ثابت
-  //lcd.setCursor(0,1);//بحيث بعد م يطبع الكلام يست الكارزر للسطر التاني ده معناه ان اي حاجه هتتكتب بعد كده هتتكتب في السطر التاني معادل الا لو انا عملت ست للكارزر مره تانيه 
+   digitalWrite(gnd,LOW); 
+  lcd.print("push botton"); 
+  //lcd.setCursor(0,1);  
    
    // Print a message to the LCD.
   

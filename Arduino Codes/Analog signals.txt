@@ -1,0 +1,10 @@
+ #define analog1 A0  
+ int an=0;
+ void setup() {
+ Serial.begin(9600);
+}
+
+void loop() {
+  an=analogRead(analog1);  
+ Serial.println(an);
+ }
