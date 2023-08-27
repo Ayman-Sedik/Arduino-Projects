@@ -5,12 +5,13 @@ void setup() {
  Serial.begin(9600);
  pinMode(sw,INPUT); 
  pinMode(gnd,OUTPUT);
- digitalWrite(gnd,LOW); 
+ digitalWrite(gnd,LOW);
 }
 
 void loop() {
 Serial.println(digitalRead(sw));
 }
+
 //pull up resistor  
 #define sw 2
 #define led LED_BUILTIN
@@ -21,13 +22,13 @@ void setup() {
  }
 
 void loop() {
-  if(digitalRead(sw)==LOW) 
+  if(digitalRead(sw)==LOW)
   {
     delay(10);
     digitalWrite(led,HIGH);
     }else digitalWrite(led,LOW);
   }
- 
+
 #define sw 2
 #define gnd 4
 #define led LED_BUILTIN
@@ -40,7 +41,7 @@ void setup() {
  }
 
 void loop() {
-  if(digitalRead(sw)==LOW) 
+  if(digitalRead(sw)==LOW)
   {
     delay(10);
     digitalWrite(led,HIGH);

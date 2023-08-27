@@ -1,4 +1,3 @@
-//www.youtube.com/arafamicrosystems
 #define trig 11
 #define echo 12
 int distance=0,t=0;

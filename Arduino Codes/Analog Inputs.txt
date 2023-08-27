@@ -6,9 +6,10 @@ void setup() {
 
 void loop() {
 value=analogRead(an);
+
 Serial.println(value);
 }
-
+ 
 #define an A0
 int value=0;
 float volt=0;

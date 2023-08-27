@@ -14,7 +14,7 @@ void calc()
   int avg=(1000+2000)/3;
   Serial.println(avg);
   }
- 
+
 int a=200;
 int b=500;
 void setup() {
@@ -33,7 +33,7 @@ void calc(int A,int B)
     Serial.println(A);
     }else Serial.println(B);
   }
- 
+
 int a=200;
 int b=500;
 int max1=0;
@@ -47,7 +47,7 @@ Serial.println("welcom");
 void loop() {
  
 } 
-int calc(int A,int B) 
+int calc(int A,int B)//calc=B=500
 {
    if(A>B)
    {
